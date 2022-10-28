@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcba88fc-def4-4206-ba74-a22cc0cd772f" name="Changes" comment="" />
+    <list default="true" id="dcba88fc-def4-4206-ba74-a22cc0cd772f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +27,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4d17840b-f926-46e7-a9dd-d38659983bbc" name="Changes" comment="" />
+      <changelist id="dcba88fc-def4-4206-ba74-a22cc0cd772f" name="Changes" comment="" />
       <created>1666992395345</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
