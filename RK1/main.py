@@ -1,6 +1,6 @@
 # Вариант 28 А Печуркин Д.С. ИУ5Ц-51Б
+# from pprint import pprint
 from operator import itemgetter
-from pprint import pprint
 
 class Stud_Group:
     """Студенческая группа"""
@@ -71,7 +71,7 @@ if __name__ == '__main__':
 
     print('Задание А1, сортировка по кафедрам по алфавиту\n')
     res_0 = sorted(one_to_many, key=itemgetter(2))
-    pprint(res_0)
+    print(res_0)
 
     print('\nЗадание А2, суммарное количество студентов на каждой кафедре\n')
     res_1 = []
@@ -87,7 +87,7 @@ if __name__ == '__main__':
 
     # Сортировка по количеству по убыванию
     res_1 = sorted(res_1, key=itemgetter(1), reverse=True)
-    pprint(res_1)
+    print(res_1)
 
     print('\nЗадание А3, вывести список всех кафедр, название которых\n'
           '\t\t\tначинается на ИУ и список групп состоящих в них студентов\n')
@@ -114,9 +114,4 @@ if __name__ == '__main__':
             # ключ - кафедра, значение - список групп
             res_2[dep.name] = list_deps
 
-    pprint(res_2)
-
-
-
-
-
+    print(res_2)
