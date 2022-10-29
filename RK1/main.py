@@ -60,8 +60,8 @@ Merges = [
     Merge(2, 7),
 ]
 
-if __name__ == '__main__':
-    print('Вариант 28А Печуркин Д.С. ИУ5Ц-51Б\n')
+def main():
+    # print('Вариант 28А Печуркин Д.С. ИУ5Ц-51Б\n')
 
     # Соединение данных один-ко-многим
     one_to_many = [(group.name, group.students, dep.name)
@@ -115,3 +115,6 @@ if __name__ == '__main__':
             res_2[dep.name] = list_deps
 
     print(res_2)
+
+if __name__ == '__main__':
+    main()
