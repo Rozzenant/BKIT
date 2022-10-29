@@ -2,6 +2,7 @@
 # from pprint import pprint
 from operator import itemgetter
 
+
 class Stud_Group:
     """Студенческая группа"""
 
@@ -11,12 +12,14 @@ class Stud_Group:
         self.students = count_students
         self.dep_id = dep_id
 
+
 class Departament:
     """Кафедра"""
 
     def __init__(self, id, name):
         self.id = id
         self.name = name
+
 
 class Merge:
     """
@@ -28,25 +31,25 @@ class Merge:
         self.dep_id = dep_id
         self.stud_id = stud_id
 
+
 Stud_Groups = [
     Stud_Group(1, 'ИУ5Ц-51Б', 3, 1),
-    Stud_Group(2,'РК6-30', 10, 4),
-    Stud_Group(3,'ИБМ2-61', 6, 5),
-    Stud_Group(4,'ИБМ2-62', 6, 5),
-    Stud_Group(5,'МТ8-31', 8, 3),
-    Stud_Group(6,'ИУ3-31', 11, 2),
-    Stud_Group(7,'ИУ3-32', 11, 2),
+    Stud_Group(2, 'РК6-30', 10, 4),
+    Stud_Group(3, 'ИБМ2-61', 6, 5),
+    Stud_Group(4, 'ИБМ2-62', 6, 5),
+    Stud_Group(5, 'МТ8-31', 8, 3),
+    Stud_Group(6, 'ИУ3-31', 11, 2),
+    Stud_Group(7, 'ИУ3-32', 11, 2),
     Stud_Group(8, 'ИУ5Ц-52Б', 5, 1),
     Stud_Group(9, 'ИУ5Ц-53Б', 7, 1),
 ]
 
-
 Departaments = [
-    Departament(1,'ИУ5 - Системы обработки информации и управления'),
-    Departament(2,'ИУ3 - Информационные системы и телекоммуникации'),
-    Departament(3,'МТ8 - Материаловедение'),
-    Departament(4,'РК6 - Системы автоматизированного проектирования',),
-    Departament(5,'ИБМ2 - Экономика и организация производства'),
+    Departament(1, 'ИУ5 - Системы обработки информации и управления'),
+    Departament(2, 'ИУ3 - Информационные системы и телекоммуникации'),
+    Departament(3, 'МТ8 - Материаловедение'),
+    Departament(4, 'РК6 - Системы автоматизированного проектирования', ),
+    Departament(5, 'ИБМ2 - Экономика и организация производства'),
 ]
 
 Merges = [
@@ -59,6 +62,7 @@ Merges = [
     Merge(2, 6),
     Merge(2, 7),
 ]
+
 
 def main():
     # print('Вариант 28А Печуркин Д.С. ИУ5Ц-51Б\n')
@@ -115,6 +119,7 @@ def main():
             res_2[dep.name] = list_deps
 
     print(res_2)
+
 
 if __name__ == '__main__':
     main()
