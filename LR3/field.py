@@ -8,7 +8,7 @@ goods = [
 
 def field(items, *args):
     assert len(args) > 0
-    if len(items) == 1:
+    if len(args) == 1:
         for i in items:
             yield i.get(args[0])
     else:
