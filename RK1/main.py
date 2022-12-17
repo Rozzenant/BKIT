@@ -32,6 +32,37 @@ class Merge:
         self.stud_id = stud_id
 
 
+# Stud_Groups = [
+#     Stud_Group(1, 'ИУ5Ц-51Б', 3, 1),
+#     Stud_Group(2, 'РК6-30', 10, 4),
+#     Stud_Group(3, 'ИБМ2-61', 6, 5),
+#     Stud_Group(4, 'ИБМ2-62', 6, 5),
+#     Stud_Group(5, 'МТ8-31', 8, 3),
+#     Stud_Group(6, 'ИУ3-31', 11, 2),
+#     Stud_Group(7, 'ИУ3-32', 11, 2),
+#     Stud_Group(8, 'ИУ5Ц-52Б', 5, 1),
+#     Stud_Group(9, 'ИУ5Ц-53Б', 7, 1),
+# ]
+#
+# Departaments = [
+#     Departament(1, 'ИУ5 - Системы обработки информации и управления'),
+#     Departament(2, 'ИУ3 - Информационные системы и телекоммуникации'),
+#     Departament(3, 'МТ8 - Материаловедение'),
+#     Departament(4, 'РК6 - Системы автоматизированного проектирования', ),
+#     Departament(5, 'ИБМ2 - Экономика и организация производства'),
+# ]
+#
+# Merges = [
+#     Merge(1, 1),
+#     Merge(1, 8),
+#     Merge(1, 9),
+#     Merge(3, 5),
+#     Merge(5, 3),
+#     Merge(5, 4),
+#     Merge(2, 6),
+#     Merge(2, 7),
+# ]
+
 Stud_Groups = [
     Stud_Group(1, 'ИУ5Ц-51Б', 3, 1),
     Stud_Group(2, 'РК6-30', 10, 4),
@@ -62,6 +93,7 @@ Merges = [
     Merge(2, 6),
     Merge(2, 7),
 ]
+
 
 
 def main():
@@ -123,3 +155,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

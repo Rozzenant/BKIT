@@ -1,4 +1,7 @@
 import sys
+import unittest
+from unittest.mock import Mock, patch
+
 
 def get_coef(index, prompt):
     '''
@@ -97,7 +100,39 @@ def main():
     if len_roots == 4:
         print(f"Есть четыре корня: {roots[0]}, {roots[1]}, {roots[2]} и {roots[3]}")
 
+class get_roots_TDD(unittest.TestCase):
+    def test(self):
+        self.assertEqual(get_roots(1, -4, 0), set())
 
+
+        self.assertEqual(get_roots(1, -5, 6), {1.4142135623730951,
+                                               -1.7320508075688772,
+                                               1.7320508075688772,
+                                               -1.4142135623730951})
+
+        self.assertEqual(get_roots(-4, 16, 0), {0, 2, -2})
+        self.assertRaises(TypeError, get_roots, 1 + 1j, 2 - 3j, 5 + 10j)
+
+        # С Mock - объектами
+
+        roots_obj = Roots4()
+        roots_obj.roots = Mock(return_value=[5, 1, 8])
+
+        print(roots_obj.roots(-4, 16, 0))
+
+        roots_obj.roots.assert_called_once()
+        roots_obj.roots.assert_called_with(-4, 16, 0)
+
+        self.assertEqual(roots_obj.roots(1, 2, 3), set())
+
+class Roots4:
+    def __init__(self):
+        pass
+
+    def roots(self, a, b, c):
+        return get_roots(a, b, c)
 
 if __name__ == '__main__':
-    main()
+    unittest.main()
+    # main()
+

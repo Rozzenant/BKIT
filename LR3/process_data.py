@@ -29,11 +29,11 @@ def f3(arg):
 @print_result
 def f4(arg):
     salary = list(gen_random(len(arg), 100000, 200000))
-    return [f'{job}, зарплата {salary} руб.' for job, salary in zip(arg, salary)]
+    return list(f'{job}, зарплата {salary} руб.' for job, salary in zip(arg, salary))
 
 
 if __name__ == '__main__':
     with cm_timer_1():
-        pprint(f4(f3(f2(f1(data)))))
+        f4(f3(f2(f1(data))))
         # print(*f4(data))
         pass

@@ -2,7 +2,8 @@ def print_result(func_to_decorate):
 
     def decorated_func(*args):
         print(func_to_decorate.__name__)
-        result = func_to_decorate(*args)
+        #result = func_to_decorate(*args)
+        result = None
         if type(result) is list:
             for i in result:
                 print(i)
